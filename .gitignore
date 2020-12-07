@@ -2,9 +2,11 @@
 .Rhistory
 .RData
 .Ruserdata
-*.xlsx
-*.doc
-*.docx
-*.eds
+
 2020_TRES_Telomere_Labwork/qpcr_templates/
 2020_TRES_Telomere_Labwork/protocols/
+notes_preliminary data/
+2020_TRES_Telomere_Labwork/../*.xlsx
+2020_TRES_Telomere_Labwork/../*.doc
+2020_TRES_Telomere_Labwork/../*.docx
+2020_TRES_Telomere_Labwork/../*.eds
