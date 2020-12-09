@@ -45,7 +45,7 @@ rpt(Cq ~ (1|sample_id), data = gadph_standards, grname = "sample_id", datatype =
 
 # All samples
 results %>% filter(pcr_primer == "telo") %>% group_by(sample_id) %>% filter(n() > 1) %>% # grab duplicated rows
-  rpt(Cq ~ (1|sample_id), data = ., grname = "sample_id", datatype = "Gaussian", nboot= 100, npermut = 0) # run repeatability = 0.80
+  rpt(Cq ~ (1|sample_id), data = ., grname = "sample_id", datatype = "Gaussian", nboot= 100, npermut = 0) # run repeatability = 0.85
 
 results %>% filter(pcr_primer == "gadph") %>% group_by(sample_id) %>% filter(n() > 1) %>% # grab duplicated rows
   rpt(Cq ~ (1|sample_id), data = ., grname = "sample_id", datatype = "Gaussian", nboot= 100, npermut = 0) # run repeatability = 0.72
@@ -53,7 +53,6 @@ results %>% filter(pcr_primer == "gadph") %>% group_by(sample_id) %>% filter(n()
 dup_gadph <- results %>% filter(pcr_primer == "gadph") %>% group_by(sample_id) %>% filter(n() > 1) %>% droplevels()
 table(dup_gadph$sample_id)
 dup_gadph %>% as.data.frame %>% select(pcr_date) %>% unique
-
 
 # T/S Ratio
 # T/S ratio = 2^−(Cq_telo – Cq_telo_golden] – [Cq_gadph – Cq_gadph_golden)])
@@ -88,7 +87,7 @@ plot(ts_ratio4 ~ ts_ratio3, ts_results)
 head(ts_results)
 plot(ts_ratio1 ~ ts_ratio2, ts_results)
 
-write.csv(ts_results, "ts_results.csv")
-ts_results %>% arrange(sample_id) %>% write.csv("telomere_results.csv")
-ts_results$Cq_telo %>% fivenum
+
+ts_results %>% arrange(sample_id) %>% write.csv("results/telomere_results.csv")
+filter(ts_results, )
 
