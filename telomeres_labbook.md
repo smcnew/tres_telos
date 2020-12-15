@@ -35,6 +35,17 @@ GOOD PLATES:
 2020-11-10_telo/gadph (Plate 4)
 2020-11-24_telo / 2020-07-31_gadph (Plate 5)
 2020-11-25_telo/gadph (Redos)
+2020-12-4_telo (Final redos)
 
+December 9:
+Created a script: "qpcr_summary_compilation.R" to clean and compile qpcr results
+Returns a dataset with T/S ratios, 1 per bird. 
 
+December 14: 
+Created a script: "adults.R" to compile covariates for adults data set. 
+Datasets to be compiled: - 
+1. ts_results: telomere results
+2. extractions: matching extraction (T_) to band number and capture date 
+3. physiology data: matching treatment and phys data to blood sample list
+4. nest data: matching fledging success to capture data 
 

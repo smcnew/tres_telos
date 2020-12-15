@@ -1,0 +1,10 @@
+,Capture_Date,sample_id,band,year,day,notes
+1,4-Jun-15,T_067,240113705,2015,155,not in captures database
+2,5-Jun-15,T_079,262125916,2015,156,"Closet capture 6 June 15, probably just mislabeled"
+3,20-May-15,T_011,240113705,2015,140,not in captures database
+4,21-May-15,T_050,240150566,2015,141,"closet capture 17th May 2015, extraction from 21 May"
+5,24-Jun-15,T_096,263114336,2015,175,"closet capture 10th May 2015, extraction from 24 June 15"
+6,27-Jun-15,T_097,262125559,2015,178,"no data from 2015 (only 2014 and 2016), extraction from 27 June 15"
+7,27-Jun-15,T_042,263114336,2015,178,"no data from 2015 (only 2016), extraction from 27 June 15"
+8,28-May-16,T_150,185146896,2016,149,"closest capture dates 25 and 30 May 2016, extraction from 28 May 16"
+9,30-May-15,T_064,263126035,2015,150,not in captures database
